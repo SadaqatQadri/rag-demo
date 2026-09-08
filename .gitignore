@@ -1,0 +1,6 @@
+
+.env
+__pycache__/
+chroma_store/
+README_hf.md
+*.pyc

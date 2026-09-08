@@ -1,0 +1,30 @@
+{
+  "_comment": "Your test set. Rewrite these for each client using questions THEY say customers actually ask. 'expect' = substrings that must appear in a correct answer (case-insensitive). 'should_refuse' = true means the documents don't cover it and the bot must decline rather than invent an answer. Aim for at least a third of questions to be should_refuse — a bot that never says 'I don't know' is the failure mode you are selling against.",
+  "questions": [
+    { "q": "What's the warranty on the hardshell backpacks?", "expect": ["2-year", "zipper"], "should_refuse": false },
+    { "q": "Does the warranty cover damage from airline baggage handling?", "expect": ["not"], "should_refuse": false },
+    { "q": "Can I return a jacket I already wore once?", "expect": ["store credit", "70"], "should_refuse": false },
+    { "q": "How long do I have to return an unworn item?", "expect": ["30 days"], "should_refuse": false },
+    { "q": "Are final sale items returnable?", "expect": ["cannot", "final sale"], "should_refuse": false },
+    { "q": "How much is expedited shipping?", "expect": ["14.99"], "should_refuse": false },
+    { "q": "Is shipping free?", "expect": ["75"], "should_refuse": false },
+    { "q": "Do you ship to Europe?", "expect": [], "should_refuse": true },
+    { "q": "How many PTO days do I accrue per month?", "expect": ["1.5"], "should_refuse": false },
+    { "q": "How much PTO can I carry into next year?", "expect": ["5"], "should_refuse": false },
+    { "q": "How far in advance do I need to request time off?", "expect": ["5 business days"], "should_refuse": false },
+    { "q": "How many weeks of parental leave does a primary caregiver get?", "expect": ["12"], "should_refuse": false },
+    { "q": "Do I need approval before buying something for $250?", "expect": ["manager", "200"], "should_refuse": false },
+    { "q": "How many days a week can I work remotely?", "expect": ["3"], "should_refuse": false },
+    { "q": "What refund amount can Tier 1 support approve on their own?", "expect": ["50"], "should_refuse": false },
+    { "q": "Who handles warranty claims?", "expect": ["tier 2"], "should_refuse": false },
+    { "q": "What happens if a customer mentions a chargeback?", "expect": ["tier 2"], "should_refuse": false },
+    { "q": "What's the Tier 3 response time?", "expect": ["2 business days"], "should_refuse": false },
+    { "q": "What's your phone number?", "expect": [], "should_refuse": true },
+    { "q": "Do you offer student discounts?", "expect": [], "should_refuse": true },
+    { "q": "Can I pay in instalments?", "expect": [], "should_refuse": true },
+    { "q": "Who is the CEO of the company?", "expect": [], "should_refuse": true },
+    { "q": "What is your policy on cryptocurrency payments?", "expect": [], "should_refuse": true },
+    { "q": "I bought a backpack and the zip broke after 8 months, am I covered?", "expect": ["warranty"], "should_refuse": false },
+    { "q": "My order was over $500 and arrived damaged, who deals with that?", "expect": ["tier 2"], "should_refuse": false }
+  ]
+}
